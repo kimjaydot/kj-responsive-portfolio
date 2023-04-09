@@ -9,6 +9,35 @@ font-family: 'Poppins', sans-serif;*/
 body {
   font-family: var(--default-font-family);
 }
+
+.logo {
+  max-width: 50px;
+}
+
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
 h1,
 h2,
 h3,
@@ -124,5 +153,8 @@ p {
   .content {
     text-align: center;
     padding: 0;
+  }
+  nav a {
+    font-size: 14px;
   }
 }
